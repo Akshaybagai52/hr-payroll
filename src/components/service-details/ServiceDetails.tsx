@@ -5,6 +5,7 @@ import { Card, List } from 'antd';
 
 const ServiceDetails: React.FC = () => {
   const { id } = useParams<{ id: string }>();
+  //@ts-ignore
   const service = services[parseInt(id)];
 
   if (!service) {
