@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Menu } from 'antd'
 import { services } from '../../data/serviceData'
 import { Link, useLocation } from 'react-router-dom'
-import { FacebookFilled, LinkedinFilled,HomeFilled } from '@ant-design/icons'
+import { FacebookFilled, LinkedinFilled } from '@ant-design/icons'
 
 const Sidebar: React.FC = () => {
   const location = useLocation()
