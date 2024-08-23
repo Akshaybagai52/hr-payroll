@@ -30,6 +30,7 @@ const HomePage: React.FC = () => {
               placement="right"
               closable={false}
               onClose={toggleDrawer}
+              width={300}
               visible={drawerVisible}
               bodyStyle={{ padding: 0 }}
             >
