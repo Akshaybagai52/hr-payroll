@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Menu } from 'antd'
 import { services } from '../../data/serviceData'
 import { Link, useLocation } from 'react-router-dom'
 import { FacebookFilled, LinkedinFilled } from '@ant-design/icons'
 
-const Sidebar: React.FC = ({setToggle}: any) => {
+
+const Sidebar= ({setToggle}: {setToggle:() => void}) => {
   const location = useLocation()
   const [currentKey, setCurrentKey] = useState('')
 

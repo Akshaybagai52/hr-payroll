@@ -38,7 +38,7 @@ const HomePage: React.FC = () => {
             </Drawer>
           </>
         ) : (
-          <Sidebar />
+          <Sidebar setToggle={() => console.log('first')} />
         )}
         <div className="flex-1 overflow-y-auto">
           <Routes>
