@@ -4,18 +4,20 @@ import { services } from '../../data/serviceData'
 import { Link, useLocation } from 'react-router-dom'
 import { FacebookFilled, LinkedinFilled } from '@ant-design/icons'
 
-const Sidebar: React.FC = () => {
+const Sidebar: React.FC = ({setToggle}: any) => {
   const location = useLocation()
   const [currentKey, setCurrentKey] = useState('')
 
   useEffect(() => {
     if (location.pathname === '/') {
       setCurrentKey('home')
+      setToggle()
     } else {
       const match = location.pathname.match(/\/service\/(\d+)/)
       if (match) {
         setCurrentKey(match[1])
       }
+      setToggle()
     }
   }, [location])
 
